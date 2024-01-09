@@ -1,5 +1,5 @@
 # Curso PHP desde cero 
-*Día 1 
+## Día 1 
 - Variables
 - Condicionales
 - Bucles
