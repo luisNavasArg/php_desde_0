@@ -210,6 +210,66 @@ $g = true && false;
 $h = true and false;
 
 // var_dump($h);
+
      ?> 
+   <h3>Seguimos con los arrays</h3>
+   <h4>Array índexado</h4>
+   <?php
+   $frutas=array("Limón","Frutilla","Cereza");
+   echo $frutas[0]."<br>";
+   echo array_search("Cereza",$frutas);
+   array_push($frutas,"Banana");
+   if (in_array('Banana',$frutas)) {
+      echo "<br>existe la Banana";
+   }else{
+      echo "<br>No existe la Banana";
+   }
+
+   ?>
+   <h4>Array asociativo</h4>
+   <p>Para agregar un nuevo valor al array no se usa el push</p>
+   <?php
+      $edades=array("Juan"=>34,"Fer"=>32, "Luis"=>51);
+      echo "<br> La edad de Juan es: ".$edades["Juan"]."<br>";
+      $edades["Ana"]=14;
+      $edades["Ana"]=30;
+      print_r($edades);
+      echo "<br>";
+      // var_dump($edades);
+      array_push($edades,"Hola este es un string");
+      array_push($edades,"Hola este es otro string");
+      array_push($edades,"Hola este es otro más string");
+      var_dump($edades);
+      echo "<br>";
+      echo $edades[0];
+      echo "<br>";
+      echo $edades[1];
+      echo $edades[2];
+      //parámetros desde, cant, valor
+      $a=Array_fill(3,5,"Banana");
+      print_r($a);
+      $data=array("horarios"=>[
+         "dia"=>1,
+         "horario"=>["desde"=>'10:00',"hasta"=>'20:00' ]
+      ],
+      "horariosEspeciales"=>[
+         array("fecha"=>"2023-12-24","horario"=>["desde"=>'10:00',"hasta"=>'20:00'])
+      ]
+      );
+      echo "<br>";
+      $data["horarios"]["horario"]=[array("desde"=>'11:00',"hasta"=>'20:00'),array("desde"=>'15:00',"hasta"=>'20:00')];
+      print_r($data["horarios"]["horario"]);
+      echo "<br>";
+      $data["horarios"]=[array("dia"=>1,
+      "horario"=>["desde"=>'10:00',"hasta"=>'20:00' ]),
+      array("dia"=>2,
+      "horario"=>["desde"=>'10:00',"hasta"=>'23:00' ])
+         
+   ];
+   echo "<br>";
+   $data["horarios"]["horarios"]=["desde"=>'10:00',"hasta"=>'20:00',"desde"=>'8:00',"hasta"=>'20:00' ];
+   print_r($data['horarios']);
+
+   ?>
 </body>
 </html>
