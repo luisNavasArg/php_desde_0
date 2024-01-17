@@ -29,6 +29,10 @@ Crear un programa en PHP que realice lo siguiente:
 - Creación de nustro crud_turnos
 - Creación de los archivos index e conexion.php
 
+- Desafío 
+- Crear la tabla para usuarios
+- Crear la tabla para los turnos 
+
 
 
 
