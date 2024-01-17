@@ -23,5 +23,12 @@ Crear un programa en PHP que realice lo siguiente:
 - Agregar dos nuevos nombres al array.
 - Mostrar todos los nombres del array utilizando un bucle.
 
+## Día 3
+
+- Arrays Asociativos e índexados
+- Creación de nustro crud_turnos
+- Creación de los archivos index e conexion.php
+
+
 
 
