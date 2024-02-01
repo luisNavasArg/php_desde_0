@@ -33,6 +33,31 @@ Crear un programa en PHP que realice lo siguiente:
 - Crear la tabla para usuarios
 - Crear la tabla para los turnos 
 
+## Día 4 
+
+- Agregar turnos
+- Leer turnos
+- head.php
+- Creamos el archivo models.php
+
+## Desafío 
+- Iniciar el crud de usuarios
+- Crear usuarios
+- Leer usuarios 
+
+## Día 5 
+
+- Agregar usuario(registro)
+- Login 
+- Creación de ruta protegida
+- Cambiar estado del turno (función)
+- Reutilizamos las funciones de models para cualquier base de datos y tabla
+
+## Desafío 
+- Crear el botón para modificar el estado del turno
+- Crear el botón de borrar
+- Terminar crud de turnos
+
 
 
 

@@ -25,7 +25,18 @@
                         <td><?=$row['fecha']?></td>
                         <td><?=$row['hora']?></td>
                         <td><?=$row['email']?></td>
-                        <td><a href="/clases/crud_turnos/change_state.php?id=<?=$row['id']?>&value=ausente">Ausente</a></td>
+                        <td>
+                        <form action="/clases/crud_turnos/change_state.php">
+                            <input type="text" name="id" value="<?=$row['id']?>" hidden>
+                            <select name="value" class="form-select" aria-label="Default select example">
+                            <option value="ausente">Ausente</option>
+                            <option value="activo" selected>Activo</option>
+                            <option value="atendido">Atendido</option>
+                            </select>
+                            <input type="submit" value="cambiar">
+                        </form>
+                        </td>
+                     
                     </tr>
                     <?php
                 }
