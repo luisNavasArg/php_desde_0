@@ -1,7 +1,7 @@
 <?php
     include("models.php");
     include("head.php");
-    $result=get_data();
+    $result=get_data("crud_turnos","turnos");
 ?>
 <div class="container bg-success bg-opacity-25">
     <div class="row d-flex justify-content-center m-4">
@@ -25,6 +25,7 @@
                         <td><?=$row['fecha']?></td>
                         <td><?=$row['hora']?></td>
                         <td><?=$row['email']?></td>
+                        <td><a href="/clases/crud_turnos/change_state.php?id=<?=$row['id']?>&value=ausente">Ausente</a></td>
                     </tr>
                     <?php
                 }

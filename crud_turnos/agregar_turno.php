@@ -26,7 +26,8 @@ include("head.php");
 </div>
 <?php
     include("conexion.php");
-    
+    $database="crud_turnos";
+    $mysqli = conectarMysql($database);
     if (isset($_POST['fecha']) && isset($_POST['hora']) && isset($_POST['email'])) {
         $fecha=$_POST['fecha'];
         $hora=$_POST['hora'];
